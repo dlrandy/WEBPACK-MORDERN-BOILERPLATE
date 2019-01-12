@@ -1,0 +1,25 @@
+:root {
+  --color: gray;
+}
+body {
+  background-color: mediumspringgreen;
+}
+.dfdf {
+  color: #43f;
+  font-size: 12px;
+}
+#app {
+  color: var(--color);
+  font-size: 12px;
+}
+ 
+  
+ 
+  
+
+
+
+
+
+
+

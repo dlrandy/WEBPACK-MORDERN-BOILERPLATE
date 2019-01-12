@@ -1,0 +1,6 @@
+dist
+docs
+package.json
+coverage
+package-lock.json
+src/index.html

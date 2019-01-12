@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | webpack-poilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module2.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Warning">Warning</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-app">app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Yell">Yell</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#apis">apis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/apis/network.js~Network.html">Network</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#apis-survey-poll">apis/survey_poll</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPollNetwork">getPollNetwork</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-components-lazyloaderror">common/components/LazyLoadError</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-LazyFactory">LazyFactory</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tools">tools</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatDateStr">formatDateStr</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTimeRemaining">getTimeRemaining</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isDev">isDev</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p>Development:</p>
+<p>//====================================
+Production:
+treeshaking
+scope hoisting
+minification</p>
+<p>&#x867D;&#x7136;module&#x6B63;&#x5728;&#x5F97;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x539F;&#x751F;&#x652F;&#x6301;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#xFF0C;&#x4F60;&#x8BA9;&#x9700;&#x8981;&#x4F7F;&#x7528;bundler&#x7684;&#xFF1B;
+bundlers&#x4F1A;&#x628A;import&#x548C;export&#x7684;&#x58F0;&#x660E;&#x8F6C;&#x6362;&#x6210;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x8FD0;&#x884C;&#x7684;&#x6709;&#x6548;&#x7684;JS&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x5927;&#x81F4;&#x7684;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#xFF1A;
+&#x6A21;&#x5757;&#x4F1A;&#x88AB;&#x88C5;&#x5165;function&#x7528;&#x6765;&#x9694;&#x79BB;scope&#xFF0C;&#x540C;&#x65F6;&#x5F15;&#x5165;&#x7684;&#x6A21;&#x5757;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x53D8;&#x91CF;&#xFF0C;&#x6301;&#x6709;WEBPACK_REQUIRE_METHOD&#x52A0;&#x8F7D;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x6700;&#x7EC8;&#x6240;&#x6709;&#x7684;
+&#x6A21;&#x5757;&#x88AB;&#x653E;&#x5165;bundle&#x6700;&#x540E;&#x7684;&#x6570;&#x7EC4;&#x91CC;&#x3002;&#x7136;&#x540E;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#x63D0;&#x4F9B;&#x7D22;&#x5F15;&#x6765;&#x5F15;&#x7528;&#x51FD;&#x6570;&#x3002;bundle&#x7684;&#x9876;&#x90E8;&#x662F;&#x4E00;&#x4E9B;&#x9884;&#x7F6E;&#x7684;&#x4EE3;&#x7801;&#x7528;&#x6765;&#x8FD0;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x3002;</p>
+<p>hash chunkhash contenthash</p>
+<p>eslint
+<a href="https://www.robinwieruch.de/react-eslint-webpack-babel/">https://www.robinwieruch.de/react-eslint-webpack-babel/</a>
+<a href="https://www.robinwieruch.de/minimal-react-webpack-babel-setup/">https://www.robinwieruch.de/minimal-react-webpack-babel-setup/</a></p>
+<p>importsloaders
+<a href="https://github.com/webpack-contrib/css-loader/issues/228">https://github.com/webpack-contrib/css-loader/issues/228</a></p>
+<p>//hmr slowly
+//end to end test
+//polyfill</p>
+<p>//production support multi prjs ( output, optimize)</p>
+<p>//following has error
+\webpack-poilerplate&gt;npm run start-build src/index.js src/index.html src/index.js           </p>
+<p>url vs url with query string</p>
+<p><a href="https://iamakulov.com/notes/optimize-images-webpack/">https://iamakulov.com/notes/optimize-images-webpack/</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
